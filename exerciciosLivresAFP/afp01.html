@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste AFP</title>
+</head>
+    <style>
+        h1{
+            font: normal 30pt Arial;
+            color: orange
+        }
+    </style>
+<body>
+    <h1>Olá Lipa :)</h1>
+    <h2>Sabes quanto gosto de ti?</h2>
+    <input type="button" value='Carrega para saberes <3' id='d'>
+    
+    <p id='res'></p>
+
+    <script>
+        let res = window.document.querySelector('p#res'); //ligar ao elemento
+        let d = window.document.getElementById('d')
+        d.addEventListener('click', clicar);
+
+        function clicar(){
+            res.innerText += 'Muito!'
+            res.style.color = 'orange';
+            res.style.background = 'white'
+        }
+    </script>
+    
+</body>
+</html>
